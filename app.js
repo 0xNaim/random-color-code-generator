@@ -32,3 +32,12 @@ const generateColor = document
     document.getElementById("output").style.color = color;
     document.getElementById("output").innerHTML = color;
   });
+
+// copy to clipboard handler
+const output = document
+  .getElementById("output")
+  .addEventListener("click", () => {
+    document.execCommand("copy");
+    // document.getElementById("output").innerText = "Copied";
+    alert("Copied!");
+  });

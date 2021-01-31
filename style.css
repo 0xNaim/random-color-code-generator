@@ -43,4 +43,10 @@
   width: 10rem;
   text-align: center;
   border-radius: 7px;
+  user-select: all;
+  cursor: pointer;
+}
+
+#output::selection {
+  background: none;
 }
